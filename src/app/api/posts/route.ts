@@ -9,6 +9,7 @@ import jwt from "jsonwebtoken";
 export async function GET(req: NextRequest) {
     try {
         const authHeader = req.headers.get("authorization");
+
         if (!authHeader || !authHeader.startsWith("Bearer ")) {
           return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
         }
@@ -59,7 +60,7 @@ export async function POST(req: NextRequest) {
         .from(postsTable)
         .where(
           and(eq(postsTable.title, body.title), eq(postsTable.content, body.content))
-        );
+      );
   
       if (existingPost.length > 0) {
         return NextResponse.json(
