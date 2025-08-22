@@ -15,6 +15,8 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { toast } from "sonner"
 import { useRouter } from "next/navigation"
 
+
+
 export function LoginForm({
   className,
   ...props
@@ -130,9 +132,9 @@ export function LoginForm({
             </form>
           </Form>
           
-          <div className="bg-muted relative hidden md:block">
+          <div className="bg-muted relative">
             <Image
-              src="/im.jpg"
+              src={"/images/im.jpg"}
               alt="i"
               width={400}
               height={400}

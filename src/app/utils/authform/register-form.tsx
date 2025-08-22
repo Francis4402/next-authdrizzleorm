@@ -184,7 +184,7 @@ export function RegisterForm({
               </div>
             </form>
           </Form>
-          <div className="bg-muted relative hidden md:block">
+          <div className="bg-muted relative">
             <Image
               src="/im.jpg"
               alt="Image"
