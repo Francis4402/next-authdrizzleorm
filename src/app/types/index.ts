@@ -28,10 +28,10 @@ export interface loginType {
 
 export interface ForgotPasswordType {
     email: string;
-  };
+};
   
 export interface ResetPasswordType {
     token: string;
     newPassword: string;
-  };
+};
   
