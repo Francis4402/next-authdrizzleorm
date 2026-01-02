@@ -19,7 +19,7 @@ DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require"
 
 
 # App
-BASE_URL="http://localhost:3000"
+BASE_URL="http://161.248.189.254"
 
 # Authentication
 AUTH_SECRET="your-auth-secret"

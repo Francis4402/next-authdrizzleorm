@@ -35,7 +35,7 @@ export function LoginForm({
       const res = await signIn("credentials", {
         email: data.email,
         password: data.password,
-        callbackUrl: "http://localhost:3000",
+        callbackUrl: "http://161.248.189.254",
         redirect: false,
       });
 
@@ -105,13 +105,13 @@ export function LoginForm({
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <Button variant="outline" type="button" className="w-full" onClick={() => signIn("github", {
-                    callbackUrl: "http://localhost:3000",
+                    callbackUrl: "http://161.248.189.254",
                   })}>
                     <GithubIcon />
                     <span className="sr-only">Login with Github</span>
                   </Button>
                   <Button variant="outline" type="button" className="w-full" onClick={() => signIn("google", {
-                    callbackUrl: "http://localhost:3000",
+                    callbackUrl: "http://161.248.189.254",
                   })}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <path
